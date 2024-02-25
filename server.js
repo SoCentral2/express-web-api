@@ -32,11 +32,7 @@ app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });
 
-/* This is a middleware function in Express that serves static files
-such as images, CSS files, and JavaScript files from the specified directory ('public' in this
-case). This line of code tells Express to look for static files in the 'public' directory and serve
-them to the client when requested. This is commonly used to serve front-end assets like HTML, CSS,
-and client-side JavaScript files. */
+/* This is a middleware function in Express that serves static files such as images, CSS files, and JavaScript files from the specified directory ('public' in this case). This line of code tells Express to look for static files in the 'public' directory and serve them to the client when requested. This is commonly used to serve front-end assets like HTML, CSS, and client-side JavaScript files. */
 app.use(express.static('public'));
 
 //* Step4 : 
